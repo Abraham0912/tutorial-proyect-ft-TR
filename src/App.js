@@ -73,7 +73,7 @@ class App extends Component {
                 characterData={this.state.characters} 
                 removeCharacter={this.removeCharacter}
             />
-            <Form />
+            <Form handleSubmit={this.handleSubmit}/>
         </div>
     )
   }

@@ -11,6 +11,11 @@ export default class componentName extends Component {
     state = this.initialState
 
 
+    submitForm = () => {
+        this.props.handleSubmit(this.state)
+        this.setState(this.initialState)
+      }
+
     handleChange = (event) => {
         const {name, value} = event.target
       
@@ -37,6 +42,7 @@ export default class componentName extends Component {
                     id="job"
                     value={this.state.job}
                     onChange={this.handleChange} />
+                    <input type="button" value="Submit" onClick={this.submitForm} />
             </form>
         )
     }
