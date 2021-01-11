@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import Table from './Table'
+import Table from './Table';
+import Form from './Form';
 
 class App extends Component {
 
@@ -36,13 +37,16 @@ class App extends Component {
           }]
   }
 
+//actualizará el estado
+  handleSubmit = (character) => {
+    this.setState({characters: [...this.state.characters, character]})
+  }
 
   removeCharacter = (index) => {
-    const {characters} = this.state//this.state.characters
+    const {characters} = this.state
   
     this.setState({
       characters: characters.filter((character, i) => {
-        //return i !== index
         return character.id !== index;
 
       }),
@@ -51,11 +55,10 @@ class App extends Component {
 
 
   addCharacter = (index) => {
-    const {characters} = this.state//this.state.characters
+    const {characters} = this.state
   
     this.setState({
       characters: characters.filter((character, i) => {
-        //return i !== index
         return character.id !== index;
 
       }),
@@ -70,6 +73,7 @@ class App extends Component {
                 characterData={this.state.characters} 
                 removeCharacter={this.removeCharacter}
             />
+            <Form />
         </div>
     )
   }
