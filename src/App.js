@@ -42,7 +42,7 @@ class App extends Component {
   
     this.setState({
       characters: characters.filter((character, i) => {
-        return character.id !== index;
+        return i !== index;
 
       }),
     })

@@ -33,7 +33,7 @@ const TableHeader = () => {
           <td>{index}</td>
           <td>{row.name}</td>
           <td>{row.job}</td>
-          <td><button onClick={() => props.removeCharacter(row.id)}>Delete</button></td>
+          <td><button onClick={() => props.removeCharacter(index)}>Delete</button></td>
         </tr>
       )
     })
