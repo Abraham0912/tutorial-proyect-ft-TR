@@ -47,7 +47,7 @@ const Table = (props) => {
   
     return (
       <div>
-        <Title descripcionN = "lorem ipsum..." titulo = "Abecedario"/>
+        <Title descripcion = "lorem ipsum..." titulo = "Abecedario"/>
         <table>
             <TableHeader datoxd="Hola cara de bola soy datoxd"/>
             <TableBody 
