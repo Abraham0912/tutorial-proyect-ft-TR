@@ -7,7 +7,7 @@ const Title = (props) => {
        <h1>
          El titulo es: {props.titulo}
        </h1>
-       <p>{props.parrafo}</p>
+       <p>{props.descripcion}</p>
      </div>
    ) 
    };
@@ -47,7 +47,7 @@ const Table = (props) => {
   
     return (
       <div>
-        <Title parrafo = "lorem ipsum..." titulo = "Abecedario"/>
+        <Title descripcionN = "lorem ipsum..." titulo = "Abecedario"/>
         <table>
             <TableHeader datoxd="Hola cara de bola soy datoxd"/>
             <TableBody 
