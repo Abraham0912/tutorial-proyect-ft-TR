@@ -47,7 +47,7 @@ const Table = (props) => {
   
     return (
       <div>
-        <Title descripcion = "lorem ipsum..." titulo = "Abecedario"/>
+        <Title descripcion = "Soy una pagina de front, creada con react, basada en el blog de Tania Rascia. Crear, agrega y elimna datos por medio del state..." titulo = "Abecedario"/>
         <table>
             <TableHeader datoxd="Hola cara de bola soy datoxd"/>
             <TableBody 
