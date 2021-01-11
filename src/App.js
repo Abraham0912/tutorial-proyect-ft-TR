@@ -6,31 +6,26 @@ class App extends Component {
 
   state = {
     characters: [{
-          id: "1",
           name: 'Charlie',
           job: 'Janitor',
           nuevoDato: "NDCharlie"
         },
         {
-          id: "2",
           name: 'Mac',
           job: 'Bouncer',
           nuevoDato: "NDMac"
         },
         {
-          id: "3",
           name: 'Dee',
           job: 'Aspring actress',
           nuevoDato: "NDDee"
         },
         {
-            id: "4",
             name: 'Dennis',
             job: 'Bartender',
             nuevoDato: "NDDennis"
           },
           {
-            id: "5",
             name: 'Abraham',
             job: 'Developer',
             nuevoDato: "NDAbraham"
